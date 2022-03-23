@@ -1,21 +1,28 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <script src="./index.js"></script>
-    <title>Tic-Tac-Toe</title>
+    <title>Tic-Tac_Toe</title>
 </head>
 <body>
-    <main class="background">
+    <div id="preloader">
+
+    </div>
+
+    <main class="backround">
         <section class="title">
             <h1>Tic Tac Toe</h1>
         </section>
         <section class="display">
-            Player <span class="display-player playerX">X</span>'s turn
+            Player <span class="display-player playerX">X</span>'s turn 
         </section>
         <section class="container">
             <div class="tile"></div>
@@ -33,5 +40,16 @@
             <button id="reset">Reset</button>
         </section>
     </main>
+
+
+
+
+    <script>
+        var loader = document.getElementById("preloader");
+
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+})
+    </script>
 </body>
 </html>
