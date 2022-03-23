@@ -74,6 +74,9 @@ color: #498afb;
 #reset {
     background-color: #ff3860;
 }
+#reset:hover{
+    font-size: large;
+}
 #preloader{
     background: #000 url(img/loader.gif) no-repeat center center;
     background-size: 20%;
